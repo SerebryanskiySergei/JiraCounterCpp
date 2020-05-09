@@ -1,0 +1,20 @@
+{
+    "jira_url": "<your jira web site URL>",
+    "username": "<your jira's user name>",
+    "token": "<your api token for access to jira instance>",
+    "board_with_sprints": "MPA1 board",
+    "period" : {
+        "type": "dates",
+        "sprint_names": [
+            "SW Sprint 16",
+            "SW Sprint 17"
+        ],
+        "start_date" : "2020-05-27",
+        "end_date": "2020-06-10"
+    },
+    "names": [
+        "Strukov",
+        "nikita",
+        "tyutyarev"
+    ]
+}
