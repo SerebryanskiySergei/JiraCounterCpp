@@ -122,3 +122,20 @@ cd Project/build/apps
 PS. If you need to change params.json file, change a file inside Project/build/apps directory. Counter app will look into this file, not in file that is in Project/apps.
 
 PSS. Build process wil rewrite params.json file inside Project/build/apps with content from Project/apps/params.json. Remember it when you will try to change something and rebuild a solution.
+
+
+## Troubleshooting
+
+#### Missing OpenSSL dev library
+```c++
+CMake Error at /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
+  Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+  system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY
+  OPENSSL_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:393 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.16/Modules/FindOpenSSL.cmake:447 (find_package_handle_standard_args)
+  build/_deps/cpr-src/opt/curl/CMakeLists.txt:357 (find_package)
+```
+
+*Solution:* sudo apt install libssl-dev
