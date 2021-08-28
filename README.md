@@ -6,6 +6,7 @@ This is a library for analyzing a personal results during a Jira Sprint
 
 * GCC 5.1 or higher
 * CMake 3.11 or better; 3.14+ highly recommended.
+* sudo apt install libssl-dev
 * Curl
 * A C++11 compatible compiler
 * Git
